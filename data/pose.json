@@ -1,0 +1,534 @@
+[
+  {
+    "createdDate": "Tue Oct 29 2024 02:18:39 GMT+0530",
+    "enabledWeekDays": [],
+    "isMissedToday": false,
+    "isPoseClickedToday": true,
+    "name": "Pose 2",
+    "paths": [
+      {
+        "d": [
+          "M100,276 ",
+          "109,270 ",
+          "138,257 ",
+          "172,246 ",
+          "207,240 ",
+          "230,239 ",
+          "249,241 ",
+          "260,251 ",
+          "266,266 ",
+          "270,291 ",
+          "272,325 ",
+          "273,361 ",
+          "272,393 ",
+          "265,425 ",
+          "256,455 ",
+          "245,485 ",
+          "229,518 ",
+          "210,552 ",
+          "193,583 ",
+          "177,607 ",
+          "161,625 ",
+          "142,637 ",
+          "127,643 ",
+          "113,648 ",
+          "105,652 ",
+          "100,654 ",
+          "98,656 ",
+          "96,657 ",
+          "94,658 ",
+          "94,658 ",
+          "94,658 ",
+          "96,657 ",
+          "107,655 ",
+          "138,647 ",
+          "192,636 ",
+          "242,627 ",
+          "280,623 ",
+          "301,621 ",
+          "316,621 ",
+          "325,621 ",
+          "330,621 ",
+          "332,621 "
+        ],
+        "penThickness": 4
+      }
+    ],
+    "photoCount": 1,
+    "poseId": "fb2231d8-ee27-43eb-bc65-a91ff49b2457",
+    "poseIndexForUser": 1,
+    "reminder": "2024-10-29T17:49:07.000Z",
+    "streak": 1,
+    "totalDayCount": 1,
+    "totalMissed": 0,
+    "userId": "1",
+    "checklist": [
+      {
+        "id": "1",
+        "index": 0,
+        "message": "Did workout today?",
+        "type": "checklist",
+        "count": 0,
+        "isChecked": false
+      },
+      {
+        "id": "3",
+        "index": 1,
+        "message": " pushups 10",
+        "type": "count",
+        "count": 0,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "createdDate": "Tue Oct 29 2024 02:18:39 GMT+0530",
+    "enabledWeekDays": [],
+    "isMissedToday": false,
+    "isPoseClickedToday": true,
+    "name": "",
+    "paths": [],
+    "photoCount": 1,
+    "poseId": "fb2231d8-ee27-43eb-bc65-a91ff49b2457",
+    "poseIndexForUser": 1,
+    "reminder": "",
+    "streak": 1,
+    "totalDayCount": 1,
+    "totalMissed": 0,
+    "userId": "1",
+    "checklist": [
+      {
+        "id": "1",
+        "index": 0,
+        "message": "Did workout today?",
+        "type": "checklist",
+        "count": 0,
+        "isChecked": false
+      },
+      {
+        "id": "3",
+        "index": 1,
+        "message": " pushups 10",
+        "type": "count",
+        "count": 0,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "createdDate": "Tue Oct 29 2024 02:21:39 GMT+0530",
+    "enabledWeekDays": [],
+    "isMissedToday": false,
+    "isPoseClickedToday": true,
+    "name": "",
+    "paths": [
+      {
+        "d": [
+          "M124,255 ",
+          "124,255 ",
+          "130,255 ",
+          "153,255 ",
+          "189,257 ",
+          "217,260 ",
+          "230,265 ",
+          "235,273 ",
+          "234,291 ",
+          "212,332 ",
+          "179,376 ",
+          "150,408 ",
+          "136,418 ",
+          "136,418 ",
+          "154,409 ",
+          "187,402 ",
+          "212,400 ",
+          "228,404 ",
+          "235,426 ",
+          "233,479 ",
+          "204,543 ",
+          "168,582 "
+        ],
+        "penThickness": 4
+      }
+    ],
+    "photoCount": 1,
+    "poseId": "d34eedef-0aee-469f-8409-0468a27d16df",
+    "poseIndexForUser": 1,
+    "reminder": "",
+    "streak": 1,
+    "totalDayCount": 1,
+    "totalMissed": 0,
+    "userId": "1",
+    "checklist": [
+      {
+        "id": "1",
+        "index": 0,
+        "message": "Did workout today?",
+        "type": "checklist",
+        "count": 0,
+        "isChecked": false
+      },
+      {
+        "id": "3",
+        "index": 1,
+        "message": " pushups 10",
+        "type": "count",
+        "count": 0,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "createdDate": "Tue Oct 29 2024 02:22:00 GMT+0530",
+    "enabledWeekDays": [],
+    "isMissedToday": false,
+    "isPoseClickedToday": true,
+    "name": "",
+    "paths": [
+      {
+        "d": [
+          "M168,211 ",
+          "192,211 ",
+          "252,211 ",
+          "299,211 ",
+          "318,211 ",
+          "322,211 ",
+          "317,219 ",
+          "291,252 ",
+          "257,294 ",
+          "227,328 ",
+          "210,344 ",
+          "204,351 ",
+          "203,351 ",
+          "212,347 ",
+          "247,341 ",
+          "291,340 ",
+          "323,341 ",
+          "344,352 ",
+          "354,366 ",
+          "357,380 ",
+          "357,390 ",
+          "357,395 ",
+          "356,396 ",
+          "356,396 ",
+          "356,396 ",
+          "355,396 ",
+          "354,396 ",
+          "350,399 ",
+          "333,405 ",
+          "280,420 ",
+          "189,436 ",
+          "128,435 ",
+          "100,419 ",
+          "95,378 ",
+          "104,314 ",
+          "114,272 ",
+          "118,249 ",
+          "119,242 ",
+          "118,239 ",
+          "116,234 ",
+          "113,228 ",
+          "111,225 ",
+          "111,225 ",
+          "111,250 ",
+          "112,429 ",
+          "121,626 ",
+          "127,719 ",
+          "130,759 ",
+          "131,764 ",
+          "136,757 ",
+          "168,716 ",
+          "240,627 ",
+          "289,563 ",
+          "311,528 ",
+          "315,511 ",
+          "301,497 ",
+          "275,484 ",
+          "255,478 ",
+          "245,478 ",
+          "241,480 ",
+          "241,487 ",
+          "249,521 ",
+          "272,593 ",
+          "288,645 ",
+          "295,670 ",
+          "297,675 ",
+          "297,675 "
+        ],
+        "penThickness": 4
+      }
+    ],
+    "photoCount": 1,
+    "poseId": "1d09a308-9783-4bb4-b113-960ea1b4fecc",
+    "poseIndexForUser": 1,
+    "reminder": "",
+    "streak": 1,
+    "totalDayCount": 1,
+    "totalMissed": 0,
+    "userId": "1",
+    "checklist": [
+      {
+        "id": "1",
+        "index": 0,
+        "message": "Did workout today?",
+        "type": "checklist",
+        "count": 0,
+        "isChecked": false
+      },
+      {
+        "id": "3",
+        "index": 1,
+        "message": " pushups 10",
+        "type": "count",
+        "count": 0,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "createdDate": "Thu Oct 31 2024 13:19:17 GMT+0530",
+    "enabledWeekDays": [],
+    "isMissedToday": false,
+    "isPoseClickedToday": true,
+    "name": "Bisep",
+    "paths": [
+      {
+        "d": [
+          "M72,525 ",
+          "104,514 ",
+          "189,496 ",
+          "244,494 ",
+          "276,494 ",
+          "289,494 "
+        ],
+        "penThickness": 4
+      },
+      {
+        "d": [
+          "M169,182 ",
+          "168,182 ",
+          "160,189 ",
+          "143,214 ",
+          "133,242 ",
+          "132,256 ",
+          "133,263 ",
+          "142,269 ",
+          "168,276 ",
+          "225,282 ",
+          "287,281 ",
+          "320,278 ",
+          "335,276 ",
+          "337,277 ",
+          "331,286 ",
+          "318,299 ",
+          "306,312 ",
+          "289,334 ",
+          "268,367 ",
+          "250,398 ",
+          "241,413 ",
+          "240,417 ",
+          "246,416 ",
+          "276,409 ",
+          "305,406 ",
+          "321,406 ",
+          "316,417 ",
+          "260,479 ",
+          "153,607 ",
+          "74,711 ",
+          "41,755 ",
+          "29,768 ",
+          "42,734 ",
+          "100,604 ",
+          "140,471 ",
+          "147,382 ",
+          "139,347 ",
+          "127,342 "
+        ],
+        "penThickness": 4
+      }
+    ],
+    "photoCount": 1,
+    "poseId": "1aac3306-0d99-4721-82a4-a642190700a1",
+    "poseIndexForUser": 1,
+    "reminder": "2024-10-31T04:49:32.000Z",
+    "streak": 1,
+    "totalDayCount": 1,
+    "totalMissed": 0,
+    "userId": "1",
+    "checklist": [
+      {
+        "id": "1",
+        "index": 0,
+        "message": "Did workout today?",
+        "type": "checklist",
+        "count": 0,
+        "isChecked": false
+      },
+      {
+        "id": "3",
+        "index": 1,
+        "message": " pushups ",
+        "type": "count",
+        "count": 30,
+        "isChecked": false
+      },
+      {
+        "id": "9065",
+        "count": 0,
+        "index": 2,
+        "isChecked": true,
+        "message": "Dumbles",
+        "type": "checklist"
+      }
+    ]
+  },
+  {
+    "createdDate": "Thu Oct 31 2024 14:09:48 GMT+0530",
+    "enabledWeekDays": [],
+    "isMissedToday": false,
+    "isPoseClickedToday": true,
+    "name": "",
+    "paths": [
+      {
+        "d": [
+          "M90,581 ",
+          "90,569 ",
+          "97,507 ",
+          "138,397 ",
+          "182,315 ",
+          "211,279 ",
+          "224,270 ",
+          "227,269 ",
+          "228,269 ",
+          "228,270 "
+        ],
+        "penThickness": 4
+      },
+      {
+        "d": [
+          "M166,173 ",
+          "164,173 ",
+          "146,175 ",
+          "125,186 ",
+          "114,194 ",
+          "103,211 ",
+          "102,229 ",
+          "103,254 ",
+          "117,282 ",
+          "146,303 ",
+          "178,310 ",
+          "209,310 ",
+          "224,309 ",
+          "264,302 "
+        ],
+        "penThickness": 4
+      },
+      {
+        "d": [
+          "M243,231 ",
+          "266,231 ",
+          "295,231 ",
+          "316,239 ",
+          "334,264 ",
+          "349,314 ",
+          "351,347 ",
+          "347,428 ",
+          "314,502 ",
+          "236,579 ",
+          "110,645 ",
+          "7,656 "
+        ],
+        "penThickness": 4
+      },
+      {
+        "d": [
+          "M35,496 ",
+          "53,528 ",
+          "49,542 ",
+          "30,549 ",
+          "18,550 "
+        ],
+        "penThickness": 4
+      },
+      {
+        "d": [
+          "M34,317 ",
+          "43,313 ",
+          "59,313 ",
+          "75,320 ",
+          "82,323 ",
+          "92,328 "
+        ],
+        "penThickness": 4
+      },
+      {
+        "d": [
+          "M285,310 ",
+          "283,310 ",
+          "282,309 ",
+          "282,306 ",
+          "284,297 ",
+          "301,287 ",
+          "329,285 ",
+          "354,310 ",
+          "369,395 ",
+          "354,486 ",
+          "320,533 ",
+          "302,545 ",
+          "261,550 ",
+          "223,529 ",
+          "214,517 ",
+          "204,494 ",
+          "209,477 ",
+          "227,468 ",
+          "242,468 ",
+          "249,481 ",
+          "245,500 ",
+          "230,510 ",
+          "222,511 ",
+          "195,491 ",
+          "164,423 ",
+          "155,371 ",
+          "155,347 ",
+          "158,344 ",
+          "162,346 ",
+          "167,364 ",
+          "170,380 ",
+          "170,418 ",
+          "153,442 ",
+          "129,448 ",
+          "106,441 ",
+          "89,412 ",
+          "87,385 ",
+          "100,367 "
+        ],
+        "penThickness": 4
+      }
+    ],
+    "photoCount": 1,
+    "poseId": "2290533b-86e8-43b2-a19e-d55ea38c3798",
+    "poseIndexForUser": 1,
+    "reminder": "",
+    "streak": 1,
+    "totalDayCount": 1,
+    "totalMissed": 0,
+    "userId": "1",
+    "checklist": [
+      {
+        "id": "1",
+        "index": 0,
+        "message": "Did workout today?",
+        "type": "checklist",
+        "count": 0,
+        "isChecked": false
+      },
+      {
+        "id": "3",
+        "index": 1,
+        "message": " pushups 10",
+        "type": "count",
+        "count": 0,
+        "isChecked": false
+      }
+    ]
+  }
+]
