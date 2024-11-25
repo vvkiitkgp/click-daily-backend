@@ -7,15 +7,17 @@ import {
   createFactModel,
   createPosePathsModel,
 } from '../model/userSchema.js';
-
+const isLocal = false;
 const sequelize = new Sequelize(
-  `postgres`,
-  `postgres`, // Database user
-  `postgres<3password`, // Database password
+  isLocal ? `postgres` : process.env.DB_NAME, // Database name
+  isLocal ? `postgres` : process.env.DB_USER, // Database user
+  isLocal ? `postgres<3password` : process.env.DB_PASSWORD,
   {
-    host: 'click-daily-postgres-database-1.cpcukma0yrsy.ap-northeast-1.rds.amazonaws.com', // Database host (e.g., RDS endpoint)
+    host: isLocal
+      ? 'click-daily-postgres-database-1.cpcukma0yrsy.ap-northeast-1.rds.amazonaws.com'
+      : process.env.DB_HOST, // Database host (e.g., RDS endpoint)
     dialect: 'postgres',
-    port: 5432, // Default to port 5432 if not specified
+    port: isLocal ? 5432 : process.env.DB_PORT, // Default to port 5432 if not specified
   }
 );
 
