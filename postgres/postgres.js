@@ -11,7 +11,7 @@ const isLocal = false;
 const sequelize = new Sequelize(
   isLocal ? `postgres` : process.env.DB_NAME, // Database name
   isLocal ? `postgres` : process.env.DB_USER, // Database user
-  isLocal ? `postgres<3password` : process.env.DB_PASSWORD,
+  `postgres<3password`,
   {
     host: isLocal
       ? 'click-daily-postgres-database-1.cpcukma0yrsy.ap-northeast-1.rds.amazonaws.com'
