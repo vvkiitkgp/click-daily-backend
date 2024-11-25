@@ -9,13 +9,13 @@ import {
 } from '../model/userSchema.js';
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME, // Database name
-  process.env.DB_USER, // Database user
-  process.env.DB_PASSWORD, // Database password
+  `postgres`,
+  `postgres`, // Database user
+  `postgres<3password`, // Database password
   {
-    host: process.env.DB_HOST, // Database host (e.g., RDS endpoint)
+    host: 'click-daily-postgres-database-1.cpcukma0yrsy.ap-northeast-1.rds.amazonaws.com', // Database host (e.g., RDS endpoint)
     dialect: 'postgres',
-    port: process.env.DB_PORT || 5432, // Default to port 5432 if not specified
+    port: 5432, // Default to port 5432 if not specified
   }
 );
 

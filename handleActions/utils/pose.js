@@ -9,6 +9,8 @@ import connection, {
 import { Op } from 'sequelize';
 
 import { v4 as uuidv4 } from 'uuid';
+import { S3Client, DeleteObjectCommand } from '@aws-sdk/client-s3';
+import dotenv from 'dotenv';
 
 export const calculateDays = (pastDate, futureDate) => {
   console.log(futureDate, pastDate, 'DATEE');
@@ -347,5 +349,87 @@ export const getPosesByUserId = async (userId) => {
   } catch (error) {
     console.error('Error retrieving poses:', error);
     throw error;
+  }
+};
+
+////
+
+dotenv.config();
+
+// Initialize AWS S3 client
+const s3 = new S3Client({
+  credentials: {
+    secretAccessKey: process.env.S3_SECRET_KEY,
+    accessKeyId: process.env.S3_ACCESS_KEY,
+  },
+  region: process.env.S3_REGION,
+});
+
+// Helper function to delete a file from AWS S3
+const deleteFromS3 = async (pictureUrl) => {
+  const bucketName = process.env.S3_BUCKET_NAME;
+  const key = pictureUrl.split('/').pop(); // Extract the file key from the URL
+
+  try {
+    const params = {
+      Bucket: bucketName,
+      Key: key,
+    };
+    await s3.send(new DeleteObjectCommand(params));
+    console.log(`Deleted file from S3: ${pictureUrl}`);
+  } catch (error) {
+    console.error(`Error deleting file from S3: ${pictureUrl}`, error);
+    throw new Error(`Failed to delete file from S3: ${pictureUrl}`);
+  }
+};
+
+// Main delete function
+export const deletePoseById = async (poseId) => {
+  await connection(); // Ensure database connection
+  console.log(`Deleting pose with ID: ${poseId}`);
+
+  try {
+    // Step 1: Delete Facts
+    const facts = await FactModel.findAll({ where: { pose_id: poseId } });
+    if (facts.length > 0) {
+      await FactModel.destroy({ where: { pose_id: poseId } });
+      console.log(`Deleted facts for pose ID ${poseId}`);
+    }
+
+    // Step 2: Delete Pictures and Files from S3
+    if (facts.length > 0) {
+      const pictureIds = facts.map((fact) => fact.picture_id); // Extract picture IDs
+      const pictures = await PicturesModel.findAll({
+        where: { picture_id: pictureIds },
+      });
+
+      for (const picture of pictures) {
+        await deleteFromS3(picture.picture_url); // Delete from S3
+      }
+
+      await PicturesModel.destroy({ where: { picture_id: pictureIds } });
+      console.log(`Deleted pictures and files from S3 for pose ID ${poseId}`);
+    }
+
+    // Step 3: Delete Pose Paths
+    await PosePathsModel.destroy({ where: { pose_id: poseId } });
+    console.log(`Deleted paths for pose ID ${poseId}`);
+
+    // Step 4: Delete Checklists
+    await ChecklistsModel.destroy({ where: { pose_id: poseId } });
+    console.log(`Deleted checklists for pose ID ${poseId}`);
+
+    // Step 5: Delete Pose
+    const deletedPose = await PosesModel.destroy({
+      where: { pose_id: poseId },
+    });
+    if (deletedPose) {
+      console.log(`Pose with ID ${poseId} successfully deleted.`);
+    } else {
+      console.log(`Pose with ID ${poseId} not found.`);
+    }
+  } catch (error) {
+    console.error(`Error deleting pose with ID ${poseId}:`, error);
+    throw new Error('Failed to delete pose.');
   }
 };

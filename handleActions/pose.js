@@ -1,5 +1,10 @@
 import fs from 'fs';
-import { addNewPose, getPosesByUserId, modifyPose } from './utils/pose.js';
+import {
+  addNewPose,
+  getPosesByUserId,
+  modifyPose,
+  deletePoseById,
+} from './utils/pose.js';
 
 class Pose {
   constructor(filename = 'pose.json') {
@@ -34,6 +39,15 @@ class Pose {
   async handleModifyPoseById(data) {
     console.log('handleModifyPoseById', data);
     await modifyPose(data);
+  }
+
+  async handleDeletePoseById(poseId) {
+    if (poseId) {
+      console.log('Got poseId', poseId);
+      await deletePoseById(poseId);
+    } else {
+      console.log(poseId);
+    }
   }
 
   async handleGetPoseDetailsByPoseId(poseId) {

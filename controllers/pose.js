@@ -35,6 +35,30 @@ export const modifyPoseById = async (req, res) => {
   }
 };
 
+export const deletePoseById = async (req, res) => {
+  try {
+    const pose = new Pose();
+    if (req.body.poseId) {
+      await pose.handleDeletePoseById(req.body.poseId);
+      res.json({
+        sucess: true,
+        message: `Deleted Pose ${req.body.poseId} `,
+      });
+    } else {
+      res.json({
+        sucess: false,
+        message: `Invalid Req param ${req.body.poseId} `,
+      });
+    }
+  } catch (err) {
+    res.json({
+      sucess: true,
+      message: `Something Went Wrong!! server error`,
+    });
+    console.error(`Error while creating: ${err.message}`);
+  }
+};
+
 export const getAllPoses = async (req, res) => {
   try {
     const pose = new Pose();

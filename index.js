@@ -6,11 +6,6 @@ import poseRouter from './routers/pose.js';
 import picturesRouter from './routers/pictures.js';
 import { connection } from './postgres/postgres.js';
 
-console.log('S3_BUCKET_NAME:', process.env.S3_BUCKET_NAME); // Should print the correct bucket name
-console.log('S3_ACCESS_KEY:', process.env.S3_ACCESS_KEY); // Should print the access key
-console.log('S3_SECRET_KEY:', process.env.S3_SECRET_KEY); // Should print the secret key
-console.log('S3_REGION:', process.env.S3_REGION); // Should print the region
-
 const result = dotenv.config();
 
 if (result.error) {
